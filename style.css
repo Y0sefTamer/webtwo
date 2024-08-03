@@ -1,0 +1,572 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #1792f7;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.saudia-name{
+    color: #fff;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #1792f7;
+    background: #1792f7;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 30px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background: #1792f7;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+/*------خدماتنا-----*/
+.service{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #1792f7;
+}
+p{
+    color: #060606;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5% ;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #1792f7;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.course-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #fff;
+}
+.course-col p{
+    color: #fff;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+/*-----منتجاتنا-----*/
+.galary{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+.galary-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom:30px ;
+    position: relative;
+    overflow: hidden;
+}
+.galary-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background:#1792f799 ;
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+/*---نص الثاني من الصور--*/
+.galary2{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+.galary-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom:30px ;
+    position: relative;
+    overflow: hidden;
+}
+.galary-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background:#1792f799 ;
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+/*---الاراء---*/
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.test-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #1792f7;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.test-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.test-col p{
+    padding: 0;
+    color: #fff;
+}
+.test-col h3{
+    margin-top: 15px;
+    text-align: left;
+    color: #fff;
+}
+.test-col .fa{
+    color: #fff;
+}
+@media(max-width: 700px){
+    .test-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+/*--call to action---*/
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/backtocall.jpg) ;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    margin-bottom: 40px;
+    padding: 0;
+}
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+/*--footer---*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #1792f7;
+}
+.icons .fa{
+    color: #1792f7;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart-o{
+    color: #f44336;
+}
+/*-- من نحن---*/
+.sup-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #1792f7;
+}
+.sup-header h1{
+    margin-top: 100px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width: 100%;
+}
+.about-col h1{
+    padding-top: 0 ;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+.blue-btn{
+    border: 1px solid #1792f7;
+    background: transparent;
+    color: #1792f7;
+}
+.blue-btn:hover{
+    color: #fff;
+}
+/*---تواصل معنا ---*/
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.contct-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa{
+    font-size: 28px;
+    color: #1792f7;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #1792f7;
+    box-sizing: border-box;
+}
+/*---whatsapp btn---*/
+.whatthehake-continer{
+    position: fixed;
+    left: 30px;
+    bottom: -50;
+    padding: 24px;
+    opacity: 0;
+    animation: fade-up 1000ms forwards;
+    animation-delay: 200ms;
+    
+}
+@keyframes fade-up {
+    100%{
+        bottom: 24px;
+        opacity: 1;
+    }
+}
+.whatthehake-continer .hake-btn{
+    font-size: 48px;
+    color: #22fc3c;
+    display: inline-block;
+    transition: all 400ms;
+}
+.whatthehake-continer .hake-btn:hover{
+    transform: scale(1.2);
+}
+.whatthehake-continer span{
+    position: absolute;
+    top: 0;
+    right: 4px;
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+    color: #075e54;
+    transform: rotateZ(20deg) translateX(10px);
+    opacity: 0;
+    transition: all 400ms;
+}
+.whatthehake-continer .hake-btn:hover + span{
+    transform: rotateZ(0deg) translateX(0px);
+    opacity: 1;
+}
+
+/*---facebook btn---*/
+.facebook-continer{
+    position: fixed;
+    left: 30px;
+    top:550px;
+    padding: 24px;
+    opacity: 0;
+    animation: fade-up 1000ms forwards;
+    animation-delay: 200ms;
+}
+@keyframes fade-up {
+    100%{
+        bottom: 24px;
+        opacity: 1;
+    }
+}
+.facebook-continer .facbook-btn{
+    font-size: 48px;
+    color: #1792f7;
+    display: inline-block;
+    transition: all 400ms;
+}
+.facebook-continer .facbook-btn:hover{
+    transform: scale(1.2);
+}
+.facebook-continer span{
+    position: absolute;
+    top: 0;
+    right: 4px;
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+    color: #075e54;
+    transform: rotateZ(20deg) translateX(10px);
+    opacity: 0;
+    transition: all 400ms;
+}
+.facebook-continer .facbook-btn:hover + span{
+    transform: rotateZ(0deg) translateX(0px);
+    opacity: 1;
+}
+/*---phone btn---*/
+.phone-continer{
+    position: fixed;
+    left: 30px;
+    top:650px;
+    padding: 24px;
+    opacity: 0;
+    animation: fade-up 1000ms forwards;
+    animation-delay: 200ms;
+}
+@keyframes fade-up {
+    100%{
+        bottom: 24px;
+        opacity: 1;
+    }
+}
+.phone-continer .phone-btn{
+    font-size: 48px;
+    color: #000dff;
+    display: inline-block;
+    transition: all 400ms;
+}
+.phone-continer .phone-btn:hover{
+    transform: scale(1.2);
+}
+.phone-continer span{
+    position: absolute;
+    top: 0;
+    right: 4px;
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+    color: #075e54;
+    transform: rotateZ(20deg) translateX(10px);
+    opacity: 0;
+    transition: all 400ms;
+}
+.phone-continer .phone-btn:hover + span{
+    transform: rotateZ(0deg) translateX(0px);
+    opacity: 1;
+}
+.phone-continer .fa{
+    font-size: 40px;
+}
+/*---animation----*/
+.autoShow{
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+}
+@keyframes autoShowAnimation {
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0)scale(1);
+    }
+}
+
+ 
